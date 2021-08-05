@@ -1,0 +1,90 @@
+.VehicleList {
+  width: 100%;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+hr.line {
+  border: 1px solid #000;
+  margin: 10px;
+  justify-items: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  justify-items: center;
+}
+
+.card {
+  box-shadow: 0 5px 10px rgba(0,0,0,.3);
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  width: 400px;
+  color: #333333;
+}
+
+.card > figure > img {
+  width: 100%;
+}
+
+.details > .min-details {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #F8F8F8;
+  width: 400px;
+  height: 500px;
+}
+
+/* // Small devices (landscape phones and up) */
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+  }
+
+  .card {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (min-width: 992px) {
+  .card {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 992px) and (min-width: 1200px) {
+  .card {
+    width: 16.5%;
+    margin: 0;
+    padding: 0;
+  }
+}
